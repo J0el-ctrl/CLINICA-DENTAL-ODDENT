@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+
+.text-cuerpo{
+    font-family: 'Noto Serif', serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Open+Sans:ital,wght@1,600&display=swap');
+
+.text-titulo{
+    
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* para las lineas negras de timepicker */
+.react-datetime-picker input:focus{
+    outline: none;
+}
+.react-datetime-picker__wrapper{
+    border:0px solid gray !important
+}
+
+
+/* // modal de  staf/ */
+/* .moda-cent {
+    width: 750px !important;
+    margin: auto;
+  } */
+/* wsp flotante style */
+
+ .container-boton-wsp{
+    background-color: #81f177;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 15px;
+    padding: 14px;
+    transition: ease 0.3s;
+    animation: efectowsp 1.2s infinite;
+}
+
+.container-boton-wsp:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton-wsp{
+    width: 80px;
+    transition: ease 1s;
+}
+
+@keyframes efectowsp{
+    0%{
+        box-shadow: 0 0 0 0 rgba(50, 163, 35, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(112, 194, 45, 0.74);
+    }
+} 
+
+
+/* wsp flotante style */
+/* fcb flotante style */
+
+.container-boton-fcb{
+    background-color:  #3b5998;
+    border: 1px solid rgb(37, 148, 199);
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 10px;
+    
+
+    
+
+
+    padding: 14px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton-fcb:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton-fcb{
+    width: 80px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(40, 115, 177, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(22, 150, 209, 0.74);
+    }
+} 
+
+
+/* fcb flotante style */
+
+/* genera pdf diseño */
+#content{
+    padding: 2px;
+    width: 587px;
+    height: 834px;
+}
+/* genera pdf diseño FIN */

@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import UsuarioProvider from './components/roles/context/UsuarioProvider';
 
+
+//redux
+
+import {Provider} from 'react-redux'
+import { store } from './components/calendarioPacientes/redux/store/store';
+
+
+//fin redux
+
+
+//al app se envuelve dentro del usuario provider para que se pueda usar en todos los hijos de la app
 ReactDOM.render(
-  <React.StrictMode>
+<Provider store={store}>
+  {/* <React.StrictMode> */}
+    <UsuarioProvider>
     <App />
-  </React.StrictMode>,
+    </UsuarioProvider>
+  {/* </React.StrictMode>,  */}
+  </Provider>,
+
+  
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
