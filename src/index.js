@@ -12,6 +12,7 @@ import { store } from './components/calendarioPacientes/redux/store/store';
 
 //fin redux
 
+//testeando git solo
 
 //al app se envuelve dentro del usuario provider para que se pueda usar en todos los hijos de la app
 ReactDOM.render(
